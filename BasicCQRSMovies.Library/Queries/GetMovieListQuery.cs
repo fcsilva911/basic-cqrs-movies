@@ -1,8 +1,8 @@
-﻿using BasicCQRSMovies.Library.Models;
+﻿using BasicCQRSMovies.Library.DTOs;
 using MediatR;
 
 namespace BasicCQRSMovies.Library.Queries
 {
-    public record GetMovieListQuery() : IRequest<List<MovieModel>>;
+    public record GetMovieListQuery() : IRequest<List<MovieReadDTO>>;
 
 }

@@ -1,8 +1,8 @@
-﻿using BasicCQRSMovies.Library.Models;
+﻿using BasicCQRSMovies.Library.DTOs;
 using MediatR;
 
 namespace BasicCQRSMovies.Library.Commands
 {
-    public record AddMovieCommand(MovieModel model) : IRequest<MovieModel>;
+    public record AddMovieCommand(MovieCreateDTO movie) : IRequest<MovieReadDTO>;
 
 }

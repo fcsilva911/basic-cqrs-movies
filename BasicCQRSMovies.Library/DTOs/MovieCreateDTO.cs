@@ -1,8 +1,7 @@
-﻿namespace BasicCQRSMovies.Library.Models
+﻿namespace BasicCQRSMovies.Library.DTOs
 {
-    public class MovieModel
+    public class MovieCreateDTO
     {
-        public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public decimal Cost { get; set; }
     }
